@@ -5,5 +5,11 @@ angular.module('video-player')
   controller: function() {
     this.videos = window.exampleVideoData;
     this.currentVideo = window.exampleVideoData[0];
+
+    this.handleVideoEntryClick = function(selectedVideo) {
+      console.log('this is ', this);
+      console.log("the selectedVideo is ", selectedVideo);
+      this.currentVideo = selectedVideo;
+    }.bind(this);
   }
 })
