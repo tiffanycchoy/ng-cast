@@ -1,7 +1,11 @@
 <div id="app container">
   <nav class="navbar">
     <div class="col-md-6 col-md-offset-3">
-      <search></search>
+      <search
+        handle-search-term="$ctrl.handleSearchTerm"
+        handle-search-button="$ctrl.handleSearchButton"
+      >
+      </search>
     </div>
   </nav>
   <div class="row">
